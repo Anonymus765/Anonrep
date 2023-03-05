@@ -4,6 +4,7 @@ class Character:
     damage = 1
     defence = 0
 
+
     # Конструктор
     def __init__(self, name='', health=100, damage=1, defence=0):
         self.name = name
