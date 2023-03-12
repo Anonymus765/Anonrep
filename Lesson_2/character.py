@@ -20,6 +20,9 @@ class Character:
             f'Defence: {self.defence}\n'
 
     def take_damage(self, damage):
+        if damage < 0:
+          print("Урон атакующего отрицателен")
+          raise ValueError
         self.health -= max(damage, 0)
 
     def attack(self, enemy):
